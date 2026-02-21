@@ -1,0 +1,29 @@
+{
+  "name": "food-delivery-cms",
+  "version": "1.0.0",
+  "description": "Production-ready serverless CMS API for food delivery",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "tsc --noEmit && node build.mjs --watch",
+    "lint": "eslint src"
+  },
+  "keywords": ["cms", "lambda", "dynamodb", "serverless"],
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.700.0",
+    "@aws-sdk/lib-dynamodb": "^3.700.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^22.10.0",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.17.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
