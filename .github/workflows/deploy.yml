@@ -48,5 +48,5 @@ jobs:
       - name: Deploy Lambda
         run: |
           aws lambda update-function-code \
-            --function-name cms-api-prod \
+            --function-name cms-api-dev \
             --zip-file fileb://dist/function.zip
